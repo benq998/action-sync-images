@@ -34,4 +34,4 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://docker.io/clickhouse/clickhouse-server:23.3.22.3 docker://registry.cn-beijing.aliyuncs.com/gexu/clickhouse:23.3.22.3
+        skopeo copy docker://docker.io/debian:bookworm-slim docker://registry.cn-beijing.aliyuncs.com/gexu/debian:bookworm-slim
