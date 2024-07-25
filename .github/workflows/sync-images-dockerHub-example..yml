@@ -34,4 +34,9 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://docker.io/debian:bookworm-slim docker://registry.cn-beijing.aliyuncs.com/gexu/debian:bookworm-slim
+        skopeo copy docker://docker.io/kubeedge/pause-arm:3.1 docker://registry.cn-beijing.aliyuncs.com/gexu/kubeedge/pause-arm:3.1
+        skopeo copy docker://docker.io/cruse/pause-arm:3.2 docker://registry.cn-beijing.aliyuncs.com/gexu/cruse/pause-arm:3.2
+        skopeo copy docker://docker.io/coredns/coredns-arm:1.8.7 docker://registry.cn-beijing.aliyuncs.com/gexu/coredns/coredns-arm:1.8.7
+        skopeo copy docker://docker.io/goharbor/busybox-arm:test1 docker://registry.cn-beijing.aliyuncs.com/gexu/goharbor/busybox-arm:test1
+        skopeo copy docker://docker.io/nacos/nacos-server:v2.4.0.1 docker://registry.cn-beijing.aliyuncs.com/gexu/nacos/nacos-server:v2.4.0.1
+        
