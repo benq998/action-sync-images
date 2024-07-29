@@ -34,4 +34,4 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://docker.io/altinity/clickhouse-backup@sha256:be917c9dbb4c945ec9b504eeef838d78c36f9607cabbf47153f99fa7c80c2bc5 docker://registry.cn-beijing.aliyuncs.com/gexu/clickhouse-backup:2.4.8
+        skopeo copy docker://docker.io/altinity/clickhouse-backup@sha256:sha256:8b03c8baf024f34dcace2a4f614979b8a0f6b5e26021e063bbc5b48f8e269e6e docker://registry.cn-beijing.aliyuncs.com/gexu/clickhouse-backup-arm:2.4.8
