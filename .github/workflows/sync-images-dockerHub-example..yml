@@ -34,9 +34,4 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://docker.io/kubeedge/pause-arm:3.1 docker://registry.cn-beijing.aliyuncs.com/gexu/pause-arm:3.1
-        skopeo copy docker://docker.io/cruse/pause-arm:3.2 docker://registry.cn-beijing.aliyuncs.com/gexu/pause-arm:3.2
-        skopeo copy docker://docker.io/coredns/coredns-arm:1.8.7 docker://registry.cn-beijing.aliyuncs.com/gexu/coredns-arm:1.8.7
-        skopeo copy docker://docker.io/goharbor/busybox-arm:test1 docker://registry.cn-beijing.aliyuncs.com/gexu/busybox-arm:test1
-        skopeo copy docker://docker.io/nacos/nacos-server:v2.4.0.1 docker://registry.cn-beijing.aliyuncs.com/gexu/nacos-server:v2.4.0.1
-        
+        skopeo copy docker://docker.io/altinity/clickhouse-backup@sha256:be917c9dbb4c945ec9b504eeef838d78c36f9607cabbf47153f99fa7c80c2bc5 docker://registry.cn-beijing.aliyuncs.com/gexu/clickhouse-backup:2.4.8
