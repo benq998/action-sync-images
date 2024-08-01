@@ -34,4 +34,4 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://docker.io/altinity/clickhouse-backup:2.4.8 docker://registry.cn-beijing.aliyuncs.com/gexu/clickhouse-backup-arm:2.4.8
+        skopeo copy docker://docker.io/nacos/nacos-server:v2.2.3 docker://registry.cn-beijing.aliyuncs.com/gexu/nacos-server:v2.2.3
